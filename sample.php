@@ -4,8 +4,7 @@ ini_set('display_errors', 'On');
 
 require_once('Matryoshka.php');
 
-$str = 'AAA.in(BBB.d(100).e(200).in(CCC.f())).b(10).c(290)';
-
+$str = "sample.limit(100).page(1).in(examples.limit(10).page(2).orderby(popular,desc)),test.length(100)";
 $mat = new Matryoshka();
 
 $result = $mat->query($str, Matryoshka::RESULT_ARRAY);
